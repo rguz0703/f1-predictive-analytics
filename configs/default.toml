@@ -1,0 +1,17 @@
+# Default project configuration. Paths are relative to the repository root
+# unless absolute. Environment variables (see .env.example) override these.
+
+[paths]
+data_dir = "data"
+# Relative cache paths are resolved against data_dir.
+fastf1_cache_dir = "cache/fastf1"
+
+[data]
+# Seasons with FastF1 timing data (2018+). The 2026 season is handled
+# separately as a regulation-change stress test (docs/prediction_scenario.md).
+first_season = 2018
+last_season = 2025
+
+[logging]
+level = "INFO"
+format = "text"  # "text" (human readable) or "json" (one JSON object per line)

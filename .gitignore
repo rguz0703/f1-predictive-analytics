@@ -1,0 +1,48 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+build/
+dist/
+
+# --- Environments ---
+.venv/
+venv/
+env/
+.conda/
+
+# --- Secrets / local config ---
+.env
+.env.*
+!.env.example
+
+# --- Data (CC BY-NC-SA licensed source data; never redistributed) ---
+data/**
+!data/README.md
+!data/*/
+!data/*/.gitkeep
+
+# --- Generated artifacts (root-anchored so src/.../models/ is NOT ignored) ---
+/models/
+/artifacts/
+/reports/generated/
+/mlruns/
+*.parquet
+*.pkl
+*.joblib
+
+# --- Tooling caches ---
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# --- OS / editors ---
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.tmp
